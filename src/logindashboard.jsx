@@ -1,7 +1,4 @@
-// src/LoginDashboard.js
 import React, { useState } from 'react';
-import 'import 'bootstrap/dist/css/bootstrap.min.css';
-';
 
 const LoginDashboard = () => {
     const [name, setName] = useState('');
@@ -24,7 +21,7 @@ const LoginDashboard = () => {
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label htmlFor="name">Name</label>
-                    <input
+                    <input 
                         type="text"
                         className="form-control"
                         id="name"
@@ -35,7 +32,7 @@ const LoginDashboard = () => {
                 </div>
                 <div className="form-group">
                     <label htmlFor="carNumberPlate">Car Number Plate</label>
-                    <input
+                    <input 
                         type="text"
                         className="form-control"
                         id="carNumberPlate"
@@ -46,7 +43,7 @@ const LoginDashboard = () => {
                 </div>
                 <div className="form-group">
                     <label htmlFor="payment">Payment</label>
-                    <input
+                    <input 
                         type="number"
                         className="form-control"
                         id="payment"
