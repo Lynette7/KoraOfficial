@@ -156,28 +156,28 @@ const KoraInsurTech = () => {
     <>
       <Header id="header" className="fixed-top">
         <div className="container d-flex align-items-center">
-          <h1 className="logo me-auto"><a href="index.html"><span>Kora</span></a></h1>
+          <h1 className="logo me-auto">< Link to="index.html"><span>Kora</span></Link></h1>
           <nav id="navbar" className="navbar order-last order-lg-0">
             <ul>
-              <li><a href="index.html" className="active">Home</a></li>
-              <li><a href="register.html">Register</a></li>
+              <li>< Link to="index.html" className="active">Home</Link></li>
+              <li>< Link to="register.html">Register</Link></li>
               <li><Link to ="/login">Login</Link></li>
-              <li className="dropdown"><a href="#"><span>About</span> <i className="bi bi-chevron-down"></i></a>
+              <li className="dropdown"><Link to="#"><span>About</span> <i className="bi bi-chevron-down"></i></Link>
                 {/* <ul>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="team.html">Team</a></li>
-                  <li><a href="testimonials.html">Testimonials</a></li>
+                  <li><a Link to="about.html">About Us</a></li>
+                  <li><a Link to="team.html">Team</a></li>
+                  <li><a Link to="testimonials.html">Testimonials</a></li>
                 </ul> */}
               </li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="pricing.html">Pricing</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li>< Link to="services.html">Services</Link></li>
+              <li><Link to="pricing.html">Pricing</Link></li>
+              <li>< Link to="contact.html">Contact</Link></li>
             </ul>
             <i className="bi bi-list mobile-nav-toggle" onClick={toggleMobileNav}></i>
           </nav>
           <div className="header-social-links d-flex">
-            <a href="#" className="twitter"><i className="bi bi-twitter"></i></a>
-            <a href="#" className="linkedin"><i className="bi bi-linkedin"></i></a>
+            <Link to="#" className="twitter"><i className="bi bi-twitter"></i></Link>
+            <Link to="#" className="linkedin"><i className="bi bi-linkedin"></i></Link>
           </div>
         </div>
       </Header>
@@ -190,15 +190,15 @@ const KoraInsurTech = () => {
                 <CarouselContent className="carousel-content animate__animated animate__fadeInUp">
                   <h2>Welcome to <span>Kora</span></h2>
                   <p>Kora Car Insurance brings you the best and affordable policies for your cars.</p>
-                     {/* <div className="text-center"><a href="about.html" className="btn-get-started">Read More</a></div> */}
+                     {/* <div className="text-center"><a Link to="about.html" className="btn-get-started">Read More</a></div> */}
                 </CarouselContent>
               </div>
             </CarouselItem>
           </div>
-          <a className="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <a className="carousel-control-prev" Link to="#heroCarousel" role="button" data-bs-slide="prev">
             <span className="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
           </a>
-          <a className="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <a className="carousel-control-next" Link to="#heroCarousel" role="button" data-bs-slide="next">
             <span className="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
           </a>
           <ol className="carousel-indicators" id="hero-carousel-indicators"></ol>
@@ -235,7 +235,7 @@ const KoraInsurTech = () => {
                   <div className="icon">
                     <i className="bx bxl-dribbble"></i>
                   </div>
-                  <h4><a href="">Liability Insurance</a></h4>
+                  <h4><a Link to="">Liability Insurance</a></h4>
                   <p>Basic coverage for damages and injuries you cause to others</p>
                 </IconBox>
               </div>
@@ -244,7 +244,7 @@ const KoraInsurTech = () => {
                   <div className="icon">
                     <i className="bx bx-file"></i>
                   </div>
-                  <h4><a href="">Collision Insurance</a></h4>
+                  <h4><a Link to="">Collision Insurance</a></h4>
                   <p>Covers damages to your vehicle from accidents with other vehicles or objects</p>
                 </IconBox>
               </div>
@@ -253,7 +253,7 @@ const KoraInsurTech = () => {
                   <div className="icon">
                     <i className="bx bx-tachometer"></i>
                   </div>
-                  <h4><a href="">Comprehensive Insurance</a></h4>
+                  <h4><a Link to="">Comprehensive Insurance</a></h4>
                   <p>Protection against non-collision events like theft, fire, and natural disasters</p>
                 </IconBox>
               </div>
@@ -262,7 +262,7 @@ const KoraInsurTech = () => {
                   <div className="icon">
                     <i className="bx bx-layer"></i>
                   </div>
-                  <h4><a href="">Personal Injury Protection</a></h4>
+                  <h4><a Link to="">Personal Injury Protection</a></h4>
                   <p>Coverage for medical expenses and lost wages after an accident</p>
                 </IconBox>
               </div>
@@ -271,7 +271,7 @@ const KoraInsurTech = () => {
                   <div className="icon">
                     <i className="bx bx-slideshow"></i>
                   </div>
-                  <h4><a href="">Uninsured/Underinsured Motorist Coverage</a></h4>
+                  <h4><a Link to="">Uninsured/Underinsured Motorist Coverage</a></h4>
                   <p>Protection against drivers with insufficient or no insurance</p>
                 </IconBox>
               </div>
@@ -280,7 +280,7 @@ const KoraInsurTech = () => {
                   <div className="icon">
                     <i className="bx bx-arch"></i>
                   </div>
-                  <h4><a href="">Roadside Assistance Insurance</a></h4>
+                  <h4><a Link to="">Roadside Assistance Insurance</a></h4>
                   <p>Coverage for services like towing, fuel delivery, and lockout assistance</p>
                 </IconBox>
               </div>
