@@ -1,0 +1,304 @@
+[{
+        "inputs": [{
+                "internalType": "address",
+                "name": "_insured",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_age",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_premiumAmount",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_averageSpeed",
+                "type": "uint256"
+            },
+            {
+                "internalType": "string",
+                "name": "_drivingLocation",
+                "type": "string"
+            },
+            {
+                "internalType": "bool",
+                "name": "_hasTelematics",
+                "type": "bool"
+            },
+            {
+                "internalType": "bool",
+                "name": "_drinkingHistory",
+                "type": "bool"
+            },
+            {
+                "internalType": "bool",
+                "name": "_healthStatus",
+                "type": "bool"
+            },
+            {
+                "internalType": "bool",
+                "name": "_isActuary",
+                "type": "bool"
+            }
+        ],
+        "name": "createPolicy",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "anonymous": false,
+        "inputs": [{
+                "indexed": true,
+                "internalType": "address",
+                "name": "previousOwner",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+            }
+        ],
+        "name": "OwnershipTransferred",
+        "type": "event"
+    },
+    {
+        "inputs": [],
+        "name": "renounceOwnership",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [{
+            "internalType": "address",
+            "name": "newOwner",
+            "type": "address"
+        }],
+        "name": "transferOwnership",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getAllPolicyIds",
+        "outputs": [{
+            "internalType": "uint256[]",
+            "name": "",
+            "type": "uint256[]"
+        }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [{
+            "internalType": "address",
+            "name": "_insured",
+            "type": "address"
+        }],
+        "name": "getPoliciesByAddress",
+        "outputs": [{
+            "components": [{
+                    "internalType": "uint256",
+                    "name": "policyId",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "insured",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "age",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "premiumAmount",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "averageSpeed",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "string",
+                    "name": "drivingLocation",
+                    "type": "string"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "hasTelematics",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "drinkingHistory",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "healthStatus",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "isActuary",
+                    "type": "bool"
+                }
+            ],
+            "internalType": "struct CarInsurance.PolicyDetails[]",
+            "name": "",
+            "type": "tuple[]"
+        }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [{
+            "internalType": "uint256",
+            "name": "_policyId",
+            "type": "uint256"
+        }],
+        "name": "getPolicy",
+        "outputs": [{
+            "components": [{
+                    "internalType": "uint256",
+                    "name": "policyId",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "insured",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "age",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "premiumAmount",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "averageSpeed",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "string",
+                    "name": "drivingLocation",
+                    "type": "string"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "hasTelematics",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "drinkingHistory",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "healthStatus",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "isActuary",
+                    "type": "bool"
+                }
+            ],
+            "internalType": "struct CarInsurance.PolicyDetails",
+            "name": "",
+            "type": "tuple"
+        }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "owner",
+        "outputs": [{
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+        }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [{
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+        }],
+        "name": "policies",
+        "outputs": [{
+                "internalType": "uint256",
+                "name": "policyId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "address",
+                "name": "insured",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "age",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "premiumAmount",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "averageSpeed",
+                "type": "uint256"
+            },
+            {
+                "internalType": "string",
+                "name": "drivingLocation",
+                "type": "string"
+            },
+            {
+                "internalType": "bool",
+                "name": "hasTelematics",
+                "type": "bool"
+            },
+            {
+                "internalType": "bool",
+                "name": "drinkingHistory",
+                "type": "bool"
+            },
+            {
+                "internalType": "bool",
+                "name": "healthStatus",
+                "type": "bool"
+            },
+            {
+                "internalType": "bool",
+                "name": "isActuary",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    }
+]
