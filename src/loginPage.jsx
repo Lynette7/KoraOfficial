@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ethers } from 'ethers';
-import Contractabi from 'abi.json';  // Ensure this path is correct
+import Contractabi from './abi.json';  // Ensure this path is correct
 import './create.css';  // Import the CSS file
 
 const carInsuranceAddress = '0x3C0c98F8b157BFce27301E1DD9067956c30209c7';
