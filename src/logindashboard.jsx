@@ -5,7 +5,7 @@ import './create.css';  // Import the CSS file
 
 const carInsuranceAddress = '0x3C0c98F8b157BFce27301E1DD9067956c30209c7';
 
-function CreatePolicy() {
+function LoginPage() {
     const [provider, setProvider] = useState(null);
     const [signer, setSigner] = useState(null);
     const [contract, setContract] = useState(null);
@@ -229,4 +229,4 @@ function CreatePolicy() {
     );
 }
 
-export default CreatePolicy;
+export default LoginPage;
